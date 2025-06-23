@@ -1,0 +1,24 @@
+name: deepu-work
+on: push
+env:
+    Node_Version: '18'
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - name: checkout-code
+          uses: actions/checkput@v4
+        
+        - name: setup-node
+          uses: actions/setup-node@v4
+          with: 
+            node-version: ${{ env.Node_Version}}
+            cache: 'npm'
+
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+        - name: docker login
+          run: echo "${{ secrets.DOCKER_PASSWORD}}" | docker login -u "${{ secrets.DOCKER_USERNAME}}"
+
+          
