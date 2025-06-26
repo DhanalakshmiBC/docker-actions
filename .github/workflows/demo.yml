@@ -9,6 +9,10 @@ jobs:
         steps:
         - uses: actions/checkout@v3
 
+        - name: logout
+          run: docker logout
+             
+
         - name: docker login
           run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
            
