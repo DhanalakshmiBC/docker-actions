@@ -16,8 +16,8 @@ jobs:
 
         - name: push to docker hub
           run: |
-            docker build -t Deepik89/ngiwen:v1 .
+            docker build -t dhanalakshmi89/ngiwen:v1 .
             echo  ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
-            docker push Deepik89/ngiwen:v1
-            
+            docker push dhanalakshmi89/ngiwen:v1
+
 
