@@ -17,6 +17,6 @@ jobs:
         - name: push to docker hub
           run: |
             docker build -t deepik/ngin:latest .
-            docker login -u "ivaan9658@gmail.com" -p "janya1234"
+            docker login -u "ivaan9658@gmail.com" -p ${{ secrets.DOCKER_TOKEN }}
             docker push deepik/ngin:latest
 
