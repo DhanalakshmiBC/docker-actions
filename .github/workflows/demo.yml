@@ -16,7 +16,7 @@ jobs:
 
         - name: push to docker hub
           run: |
-            docker build -t Deepik/ngiwen:latest .
+            docker build -t Deepik89/ngiwen:v1 .
             docker login docker.io -u "ivaan9658@gmail.com" -p ${{ secrets.DOCKER_TOKEN }}
-            docker push Deepik/ngiwen:latest
+            docker push Deepik89/ngiwen:v1
 
