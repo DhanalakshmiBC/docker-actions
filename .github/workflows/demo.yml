@@ -8,23 +8,23 @@ on:
             - master
 jobs:
 
-    deploy:
-        runs-on: ubuntu-latest
-        steps:
-        - uses: actions/checkout@v3
+    # deploy:
+    #     runs-on: ubuntu-latest
+    #     steps:
+    #     - uses: actions/checkout@v3
 
-        - name: logout
-          run: docker logout
+    #     - name: logout
+    #       run: docker logout
              
 
-        - name: Login to Docker Hub
-          run: docker logout
+    #     - name: Login to Docker Hub
+    #       run: docker logout
 
-        - name: push to docker hub
-          run: |
-            docker build -t dhanalakshmi89/superdeepu:v1 .
-            echo  ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
-            docker push dhanalakshmi89/superdeepu:v1
+    #     - name: push to docker hub
+    #       run: |
+    #         docker build -t dhanalakshmi89/superdeepu:v1 .
+    #         echo  ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+    #         docker push dhanalakshmi89/superdeepu:v1
 
     scan-with-trivy:
         runs-on: ubuntu-latest
