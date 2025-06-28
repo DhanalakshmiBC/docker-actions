@@ -26,18 +26,11 @@ jobs:
     #         echo  ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
     #         docker push dhanalakshmi89/superdeepu:v1
 
-    create-directory:
-          runs-on: ubuntu-latest
-      
-          steps:
-            - name: Create dir
-              run: |
-                mkdir deepu
-                cd deepu
-                touch README.md
-
-            - name: List files and folders
-              run: ls -l 
+    job-name:
+        runs-on: ubuntu-latest
+        permissions:
+          contents: write
+    
 
     scan-with-trivy:
         runs-on: ubuntu-latest
