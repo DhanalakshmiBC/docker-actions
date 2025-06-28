@@ -33,7 +33,7 @@ jobs:
 
         - name: set the date
           id: set-data
-          run: echo "DATE=$(date +m.%d.%Y)" >> $GITHUB_ENV
+          run: echo "DATE=$(date %m.%d.%Y)" >> $GITHUB_ENV
 
         - name: create output directory
           run: mkdir -p "GIT-Actions/Trivy-automation"
