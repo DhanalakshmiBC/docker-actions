@@ -39,48 +39,48 @@ jobs:
             - name: List files and folders
               run: ls -l 
 
-    # scan-with-trivy:
-    #     runs-on: ubuntu-latest
-    #     steps:  
-    #     - uses: actions/checkout@v3
+    scan-with-trivy:
+        runs-on: ubuntu-latest
+        steps:  
+        - uses: actions/checkout@v3
 
-    #     - name: set the date
-    #       id: set-data
-    #       run: echo "DATE=$(date +%m.%d.%Y)" >> $GITHUB_ENV
+        - name: set the date
+          id: set-data
+          run: echo "DATE=$(date +%m.%d.%Y)" >> $GITHUB_ENV
 
-    #     - name: create output directory
-    #       run: mkdir -p "GIT-Actions/Trivy-automation"
+        - name: create output directory
+          run: mkdir -p "GIT-Actions/Trivy-automation"
 
-    #     - name: Install Trivy
-    #       run: |
-    #         sudo apt-get update
-    #         sudo apt-get install -y curl
-    #         curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sudo sh -s -- -b /usr/local/bin v0.57.0
+        - name: Install Trivy
+          run: |
+            sudo apt-get update
+            sudo apt-get install -y curl
+            curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sudo sh -s -- -b /usr/local/bin v0.57.0
 
-    #     - name: Login to docker
-    #       run: echo ${{ secrets.DOCKER_PASSWORD}} | docker login -u ${{secrets.DOCKER_USERNAME}} --password-stdin
+        - name: Login to docker
+          run: echo ${{ secrets.DOCKER_PASSWORD}} | docker login -u ${{secrets.DOCKER_USERNAME}} --password-stdin
 
-    #     - name: Download Trivy vulnerability scanner
-    #       run: trivy image --download-db-only
+        - name: Download Trivy vulnerability scanner
+          run: trivy image --download-db-only
 
-    #     - name: Run trivy vulnerability scanner
-    #       run: |
-    #         OUTPUT_FILE="GIT-Actions/Trivy-automation/scan-results-${DATE}.json"
-    #         mkdir -p "GIT-Actions/Trivy-automation"
-    #         trivy image --format json --ignore-unfixed --vuln-type os,library --severity CRITICAL,HIGH,MEDIUM,LOW -o "$OUTPUT_FILE" nginx:latest
+        - name: Run trivy vulnerability scanner
+          run: |
+            OUTPUT_FILE="GIT-Actions/Trivy-automation/scan-results-${DATE}.json"
+            mkdir -p "GIT-Actions/Trivy-automation"
+            trivy image --format json --ignore-unfixed --vuln-type os,library --severity CRITICAL,HIGH,MEDIUM,LOW -o "$OUTPUT_FILE" nginx:latest
 
-    #     - name: Verify scan results exist
-    #       run: ls -l "GIT-Actions/Trivy-automation"
+        - name: Verify scan results exist
+          run: ls -l "GIT-Actions/Trivy-automation"
 
-    #     - name: Commit scan results to repository
-    #       env:
-    #         GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #       run: |
-    #          git config --global user.name "DhanalakshmiBC"
-    #          git config --global user.email "dhanalakshmi.bc@gmail.com"
-    #          git add "GIT-Actions/Trivy-automation/scan-results-${DATE}.json"
-    #          git commit -m "ADD trivy scan results (${DATE})"
-    #          git push origin HEAD:main || echo "No changes to commit"
+        - name: Commit scan results to repository
+          env:
+            GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          run: |
+             git config --global user.name "DhanalakshmiBC"
+             git config --global user.email "dhanalakshmi.bc@gmail.com"
+             git add "GIT-Actions/Trivy-automation/scan-results-${DATE}.json"
+             git commit -m "ADD trivy scan results (${DATE})"
+             git push origin HEAD:master || echo "No changes to commit"
 
 
 
