@@ -36,6 +36,9 @@ jobs:
                 cd deepu
                 touch README.md
 
+            - name: List files and folders
+              run: ls -l 
+
     # scan-with-trivy:
     #     runs-on: ubuntu-latest
     #     steps:  
