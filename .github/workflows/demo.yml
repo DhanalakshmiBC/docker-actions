@@ -32,7 +32,9 @@ jobs:
           steps:
             - name: Create dir
               run: |
-                mkdir mydirname
+                mkdir deepu
+                cd deepu
+                touch README.md
 
     # scan-with-trivy:
     #     runs-on: ubuntu-latest
