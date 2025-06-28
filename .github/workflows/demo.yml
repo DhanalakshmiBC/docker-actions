@@ -65,7 +65,7 @@ jobs:
           run: |
              git config --global user.name "DhanalakshmiBC"
              git config --global user.email "dhanalakshmi.bc@gmail.com"
-             git add "DhanalakshmiBC/GIT-Actions/Trivy-automation/scan-results-${DATE}.json"
+             git add "GIT-Actions/Trivy-automation/scan-results-${DATE}.json"
              git commit -m "ADD trivy scan results (${DATE})"
              git push origin HEAD:main || echo "No changes to commit"
 
