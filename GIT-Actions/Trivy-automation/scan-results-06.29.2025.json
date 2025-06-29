@@ -1,125 +1,125 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2025-06-29T02:45:37.252674395Z",
-  "ArtifactName": "nginx:latest",
+  "CreatedAt": "2025-06-29T03:02:19.939838657Z",
+  "ArtifactName": "dhanalakshmi89/48:00851affb56b3af6089a5db2ba89f9a6d4e6c61e",
   "ArtifactType": "container_image",
   "Metadata": {
     "OS": {
       "Family": "debian",
       "Name": "12.11"
     },
-    "ImageID": "sha256:9a9a9fd723f1d2ba52b914ece050f298eec04ef490a9065c52805e46779c4c43",
+    "ImageID": "sha256:e31fb292d0665c57e87b2b79d1f333625e0cd481d6e37b8a7d217a562423649c",
     "DiffIDs": [
-      "sha256:7fb72a7d1a8e984ccd01277432de660162a547a00de77151518dc9033cfb8cb4",
-      "sha256:151f9feea56362593fb4b85e2020dc8c8b69d33703c6d5cf2c8769b190cc54b3",
-      "sha256:13fcb2d303e83bc04c39fdd29bd0df540067619915b5deac96fc853d5c404c47",
-      "sha256:6380429cac565ac597936095d7643e6fca83c978bf2ea73078e54ed571c99d2f",
-      "sha256:126eaee18409d97a383bda20c227c11cbae5a58cf204af68721dac5e0dd2be53",
-      "sha256:d35594dd7e6de0e30f5d19afb38855299aec1ef5cbb70f97539eca365cab1e46",
-      "sha256:cd38dca3d98283db306a43da1a7e80d6bcb722ca701ce01b91dadc6baabf8235"
+      "sha256:8f003894a7efc4178494f1e133497ed2f325ae53b6a65869e54c04d1c51d588f",
+      "sha256:f5b8fb1def00d5f185660b75bac1eed1fce467d44cebd868dae2f344711321ef",
+      "sha256:1c49688bd8ebe54298be2b61f7d5efd32467862f115b5439b87c19e56e57c6b4",
+      "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a",
+      "sha256:364ae237111ea6f4e031e3d7620439d3cdd7d6972a56086913a03f5e6c7f2a37",
+      "sha256:ec442e8ae8a14d098d9784d02c087932ae8136d25c9d2724fb25aafa71bc99db",
+      "sha256:e7f7b1a65e6123524f5d97260021a7b6111a8980592b465e1b5e6efaffd6fee0",
+      "sha256:15d72e4a0ee3524862445818d0d8d3e16018f853ec378dc13f82a949c1922798",
+      "sha256:fadd4981c5bb2895350b8c2d529450a6c3d39b1dd918ec4eacd355c38547cede",
+      "sha256:9178e01a48f26d0d0d3e2fbd2e565e7869e6209db7d842f2a6a41f3ad8407693",
+      "sha256:67c0d01d0117ba8743dfa50c9fe1b8a0da1782e134a5eb57c4b4f10b2355a2bf"
     ],
     "RepoTags": [
-      "nginx:latest"
+      "dhanalakshmi89/48:00851affb56b3af6089a5db2ba89f9a6d4e6c61e"
     ],
     "RepoDigests": [
-      "nginx@sha256:dc53c8f25a10f9109190ed5b59bda2d707a3bde0e45857ce9e1efaa32ff9cbc1"
+      "dhanalakshmi89/48@sha256:11e0a2cc3a3e8c055c651586e19a51157ee8fe00b732790aeecdcb9b78f9c860"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2025-06-24T20:52:14Z",
+      "created": "2025-06-29T03:01:52.033499812Z",
       "history": [
         {
-          "created": "2025-06-10T00:00:00Z",
+          "created": "2023-05-10T23:29:59Z",
           "created_by": "# debian.sh --arch 'amd64' out/ 'bookworm' '@1749513600'",
           "comment": "debuerreotype 0.15"
         },
         {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "LABEL maintainer=NGINX Docker Maintainers \u003cdocker-maint@nginx.com\u003e",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "ENV NGINX_VERSION=1.29.0",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "ENV NJS_VERSION=0.9.0",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "ENV NJS_RELEASE=1~bookworm",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "ENV PKG_RELEASE=1~bookworm",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "ENV DYNPKG_RELEASE=1~bookworm",
-          "comment": "buildkit.dockerfile.v0",
-          "empty_layer": true
-        },
-        {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "RUN /bin/sh -c set -x     \u0026\u0026 groupadd --system --gid 101 nginx     \u0026\u0026 useradd --system --gid nginx --no-create-home --home /nonexistent --comment \"nginx user\" --shell /bin/false --uid 101 nginx     \u0026\u0026 apt-get update     \u0026\u0026 apt-get install --no-install-recommends --no-install-suggests -y gnupg1 ca-certificates     \u0026\u0026     NGINX_GPGKEYS=\"573BFD6B3D8FBC641079A6ABABF5BD827BD9BF62 8540A6F18833A80E9C1653A42FD21310B49F6B46 9E9BE90EACBCDE69FE9B204CBCDCD8A38D88A2B3\";     NGINX_GPGKEY_PATH=/etc/apt/keyrings/nginx-archive-keyring.gpg;     export GNUPGHOME=\"$(mktemp -d)\";     found='';     for NGINX_GPGKEY in $NGINX_GPGKEYS; do     for server in         hkp://keyserver.ubuntu.com:80         pgp.mit.edu     ; do         echo \"Fetching GPG key $NGINX_GPGKEY from $server\";         gpg1 --keyserver \"$server\" --keyserver-options timeout=10 --recv-keys \"$NGINX_GPGKEY\" \u0026\u0026 found=yes \u0026\u0026 break;     done;     test -z \"$found\" \u0026\u0026 echo \u003e\u00262 \"error: failed to fetch GPG key $NGINX_GPGKEY\" \u0026\u0026 exit 1;     done;     gpg1 --export \"$NGINX_GPGKEYS\" \u003e \"$NGINX_GPGKEY_PATH\" ;     rm -rf \"$GNUPGHOME\";     apt-get remove --purge --auto-remove -y gnupg1 \u0026\u0026 rm -rf /var/lib/apt/lists/*     \u0026\u0026 dpkgArch=\"$(dpkg --print-architecture)\"     \u0026\u0026 nginxPackages=\"         nginx=${NGINX_VERSION}-${PKG_RELEASE}         nginx-module-xslt=${NGINX_VERSION}-${DYNPKG_RELEASE}         nginx-module-geoip=${NGINX_VERSION}-${DYNPKG_RELEASE}         nginx-module-image-filter=${NGINX_VERSION}-${DYNPKG_RELEASE}         nginx-module-njs=${NGINX_VERSION}+${NJS_VERSION}-${NJS_RELEASE}     \"     \u0026\u0026 case \"$dpkgArch\" in         amd64|arm64)             echo \"deb [signed-by=$NGINX_GPGKEY_PATH] https://nginx.org/packages/mainline/debian/ bookworm nginx\" \u003e\u003e /etc/apt/sources.list.d/nginx.list             \u0026\u0026 apt-get update             ;;         *)             tempDir=\"$(mktemp -d)\"             \u0026\u0026 chmod 777 \"$tempDir\"                         \u0026\u0026 savedAptMark=\"$(apt-mark showmanual)\"                         \u0026\u0026 apt-get update             \u0026\u0026 apt-get install --no-install-recommends --no-install-suggests -y                 curl                 devscripts                 equivs                 git                 libxml2-utils                 lsb-release                 xsltproc             \u0026\u0026 (                 cd \"$tempDir\"                 \u0026\u0026 REVISION=\"${NGINX_VERSION}-${PKG_RELEASE}\"                 \u0026\u0026 REVISION=${REVISION%~*}                 \u0026\u0026 curl -f -L -O https://github.com/nginx/pkg-oss/archive/${REVISION}.tar.gz                 \u0026\u0026 PKGOSSCHECKSUM=\"400593da45fc0195a01138c0c23a06059da1c6a2e26959f2c4c95fbaf63436ff211665ef01392d2b775a0133d5b57680dabe51b840a55f82e89621e84cf651d1 *${REVISION}.tar.gz\"                 \u0026\u0026 if [ \"$(openssl sha512 -r ${REVISION}.tar.gz)\" = \"$PKGOSSCHECKSUM\" ]; then                     echo \"pkg-oss tarball checksum verification succeeded!\";                 else                     echo \"pkg-oss tarball checksum verification failed!\";                     exit 1;                 fi                 \u0026\u0026 tar xzvf ${REVISION}.tar.gz                 \u0026\u0026 cd pkg-oss-${REVISION}                 \u0026\u0026 cd debian                 \u0026\u0026 for target in base module-geoip module-image-filter module-njs module-xslt; do                     make rules-$target;                     mk-build-deps --install --tool=\"apt-get -o Debug::pkgProblemResolver=yes --no-install-recommends --yes\"                         debuild-$target/nginx-$NGINX_VERSION/debian/control;                 done                 \u0026\u0026 make base module-geoip module-image-filter module-njs module-xslt             )                         \u0026\u0026 apt-mark showmanual | xargs apt-mark auto \u003e /dev/null             \u0026\u0026 { [ -z \"$savedAptMark\" ] || apt-mark manual $savedAptMark; }                         \u0026\u0026 ls -lAFh \"$tempDir\"             \u0026\u0026 ( cd \"$tempDir\" \u0026\u0026 dpkg-scanpackages . \u003e Packages )             \u0026\u0026 grep '^Package: ' \"$tempDir/Packages\"             \u0026\u0026 echo \"deb [ trusted=yes ] file://$tempDir ./\" \u003e /etc/apt/sources.list.d/temp.list             \u0026\u0026 apt-get -o Acquire::GzipIndexes=false update             ;;     esac         \u0026\u0026 apt-get install --no-install-recommends --no-install-suggests -y                         $nginxPackages                         gettext-base                         curl     \u0026\u0026 apt-get remove --purge --auto-remove -y \u0026\u0026 rm -rf /var/lib/apt/lists/* /etc/apt/sources.list.d/nginx.list         \u0026\u0026 if [ -n \"$tempDir\" ]; then         apt-get purge -y --auto-remove         \u0026\u0026 rm -rf \"$tempDir\" /etc/apt/sources.list.d/temp.list;     fi     \u0026\u0026 ln -sf /dev/stdout /var/log/nginx/access.log     \u0026\u0026 ln -sf /dev/stderr /var/log/nginx/error.log     \u0026\u0026 mkdir /docker-entrypoint.d # buildkit",
+          "created": "2023-05-10T23:29:59Z",
+          "created_by": "RUN /bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tca-certificates \t\tcurl \t\tgnupg \t\tnetbase \t\tsq \t\twget \t; \trm -rf /var/lib/apt/lists/* # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "COPY docker-entrypoint.sh / # buildkit",
+          "created": "2024-01-09T01:14:25Z",
+          "created_by": "RUN /bin/sh -c set -eux; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tgit \t\tmercurial \t\topenssh-client \t\tsubversion \t\t\t\tprocps \t; \trm -rf /var/lib/apt/lists/* # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "COPY 10-listen-on-ipv6-by-default.sh /docker-entrypoint.d # buildkit",
+          "created": "2024-01-09T01:14:25Z",
+          "created_by": "RUN /bin/sh -c set -ex; \tapt-get update; \tapt-get install -y --no-install-recommends \t\tautoconf \t\tautomake \t\tbzip2 \t\tdefault-libmysqlclient-dev \t\tdpkg-dev \t\tfile \t\tg++ \t\tgcc \t\timagemagick \t\tlibbz2-dev \t\tlibc6-dev \t\tlibcurl4-openssl-dev \t\tlibdb-dev \t\tlibevent-dev \t\tlibffi-dev \t\tlibgdbm-dev \t\tlibglib2.0-dev \t\tlibgmp-dev \t\tlibjpeg-dev \t\tlibkrb5-dev \t\tliblzma-dev \t\tlibmagickcore-dev \t\tlibmagickwand-dev \t\tlibmaxminddb-dev \t\tlibncurses5-dev \t\tlibncursesw5-dev \t\tlibpng-dev \t\tlibpq-dev \t\tlibreadline-dev \t\tlibsqlite3-dev \t\tlibssl-dev \t\tlibtool \t\tlibwebp-dev \t\tlibxml2-dev \t\tlibxslt-dev \t\tlibyaml-dev \t\tmake \t\tpatch \t\tunzip \t\txz-utils \t\tzlib1g-dev \t; \trm -rf /var/lib/apt/lists/* # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "COPY 15-local-resolvers.envsh /docker-entrypoint.d # buildkit",
+          "created": "2025-06-23T10:06:16Z",
+          "created_by": "RUN /bin/sh -c groupadd --gid 1000 node   \u0026\u0026 useradd --uid 1000 --gid node --shell /bin/bash --create-home node # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "COPY 20-envsubst-on-templates.sh /docker-entrypoint.d # buildkit",
-          "comment": "buildkit.dockerfile.v0"
-        },
-        {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "COPY 30-tune-worker-processes.sh /docker-entrypoint.d # buildkit",
-          "comment": "buildkit.dockerfile.v0"
-        },
-        {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "ENTRYPOINT [\"/docker-entrypoint.sh\"]",
+          "created": "2025-06-23T10:06:16Z",
+          "created_by": "ENV NODE_VERSION=20.19.3",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "EXPOSE map[80/tcp:{}]",
+          "created": "2025-06-23T10:06:16Z",
+          "created_by": "RUN /bin/sh -c ARCH= \u0026\u0026 dpkgArch=\"$(dpkg --print-architecture)\"   \u0026\u0026 case \"${dpkgArch##*-}\" in     amd64) ARCH='x64';;     ppc64el) ARCH='ppc64le';;     s390x) ARCH='s390x';;     arm64) ARCH='arm64';;     armhf) ARCH='armv7l';;     i386) ARCH='x86';;     *) echo \"unsupported architecture\"; exit 1 ;;   esac   \u0026\u0026 export GNUPGHOME=\"$(mktemp -d)\"   \u0026\u0026 set -ex   \u0026\u0026 for key in     C0D6248439F1D5604AAFFB4021D900FFDB233756     DD792F5973C6DE52C432CBDAC77ABFA00DDBF2B7     CC68F5A3106FF448322E48ED27F5E38D5B0A215F     8FCCA13FEF1D0C2E91008E09770F7A9A5AE15600     890C08DB8579162FEE0DF9DB8BEAB4DFCF555EF4     C82FA3AE1CBEDC6BE46B9360C43CEC45C17AB93C     108F52B48DB57BB0CC439B2997B01419BD92F80A     A363A499291CBBC940DD62E41F10027AF002F8B0   ; do       gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys \"$key\" ||       gpg --batch --keyserver keyserver.ubuntu.com --recv-keys \"$key\" ;   done   \u0026\u0026 curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-$ARCH.tar.xz\"   \u0026\u0026 curl -fsSLO --compressed \"https://nodejs.org/dist/v$NODE_VERSION/SHASUMS256.txt.asc\"   \u0026\u0026 gpg --batch --decrypt --output SHASUMS256.txt SHASUMS256.txt.asc   \u0026\u0026 gpgconf --kill all   \u0026\u0026 rm -rf \"$GNUPGHOME\"   \u0026\u0026 grep \" node-v$NODE_VERSION-linux-$ARCH.tar.xz\\$\" SHASUMS256.txt | sha256sum -c -   \u0026\u0026 tar -xJf \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" -C /usr/local --strip-components=1 --no-same-owner   \u0026\u0026 rm \"node-v$NODE_VERSION-linux-$ARCH.tar.xz\" SHASUMS256.txt.asc SHASUMS256.txt   \u0026\u0026 ln -s /usr/local/bin/node /usr/local/bin/nodejs   \u0026\u0026 node --version   \u0026\u0026 npm --version   \u0026\u0026 rm -rf /tmp/* # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2025-06-23T10:06:16Z",
+          "created_by": "ENV YARN_VERSION=1.22.22",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "STOPSIGNAL SIGQUIT",
+          "created": "2025-06-23T10:06:16Z",
+          "created_by": "RUN /bin/sh -c set -ex   \u0026\u0026 export GNUPGHOME=\"$(mktemp -d)\"   \u0026\u0026 for key in     6A010C5166006599AA17F08146C2130DFD2497F5   ; do     gpg --batch --keyserver hkps://keys.openpgp.org --recv-keys \"$key\" ||     gpg --batch --keyserver keyserver.ubuntu.com --recv-keys \"$key\" ;   done   \u0026\u0026 curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz\"   \u0026\u0026 curl -fsSLO --compressed \"https://yarnpkg.com/downloads/$YARN_VERSION/yarn-v$YARN_VERSION.tar.gz.asc\"   \u0026\u0026 gpg --batch --verify yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   \u0026\u0026 gpgconf --kill all   \u0026\u0026 rm -rf \"$GNUPGHOME\"   \u0026\u0026 mkdir -p /opt   \u0026\u0026 tar -xzf yarn-v$YARN_VERSION.tar.gz -C /opt/   \u0026\u0026 ln -s /opt/yarn-v$YARN_VERSION/bin/yarn /usr/local/bin/yarn   \u0026\u0026 ln -s /opt/yarn-v$YARN_VERSION/bin/yarnpkg /usr/local/bin/yarnpkg   \u0026\u0026 rm yarn-v$YARN_VERSION.tar.gz.asc yarn-v$YARN_VERSION.tar.gz   \u0026\u0026 yarn --version   \u0026\u0026 rm -rf /tmp/* # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2025-06-23T10:06:16Z",
+          "created_by": "COPY docker-entrypoint.sh /usr/local/bin/ # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2025-06-23T10:06:16Z",
+          "created_by": "ENTRYPOINT [\"docker-entrypoint.sh\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-06-24T20:52:14Z",
-          "created_by": "CMD [\"nginx\" \"-g\" \"daemon off;\"]",
+          "created": "2025-06-23T10:06:16Z",
+          "created_by": "CMD [\"node\"]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-06-29T03:01:50.861961224Z",
+          "created_by": "WORKDIR /app",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2025-06-29T03:01:50.883428974Z",
+          "created_by": "COPY . /app # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2025-06-29T03:01:52.033499812Z",
+          "created_by": "RUN /bin/sh -c npm install # buildkit",
+          "comment": "buildkit.dockerfile.v0"
+        },
+        {
+          "created": "2025-06-29T03:01:52.033499812Z",
+          "created_by": "EXPOSE map[3000/tcp:{}]",
+          "comment": "buildkit.dockerfile.v0",
+          "empty_layer": true
+        },
+        {
+          "created": "2025-06-29T03:01:52.033499812Z",
+          "created_by": "CMD [\"node\" \"index.js\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         }
@@ -128,48 +128,386 @@
       "rootfs": {
         "type": "layers",
         "diff_ids": [
-          "sha256:7fb72a7d1a8e984ccd01277432de660162a547a00de77151518dc9033cfb8cb4",
-          "sha256:151f9feea56362593fb4b85e2020dc8c8b69d33703c6d5cf2c8769b190cc54b3",
-          "sha256:13fcb2d303e83bc04c39fdd29bd0df540067619915b5deac96fc853d5c404c47",
-          "sha256:6380429cac565ac597936095d7643e6fca83c978bf2ea73078e54ed571c99d2f",
-          "sha256:126eaee18409d97a383bda20c227c11cbae5a58cf204af68721dac5e0dd2be53",
-          "sha256:d35594dd7e6de0e30f5d19afb38855299aec1ef5cbb70f97539eca365cab1e46",
-          "sha256:cd38dca3d98283db306a43da1a7e80d6bcb722ca701ce01b91dadc6baabf8235"
+          "sha256:8f003894a7efc4178494f1e133497ed2f325ae53b6a65869e54c04d1c51d588f",
+          "sha256:f5b8fb1def00d5f185660b75bac1eed1fce467d44cebd868dae2f344711321ef",
+          "sha256:1c49688bd8ebe54298be2b61f7d5efd32467862f115b5439b87c19e56e57c6b4",
+          "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a",
+          "sha256:364ae237111ea6f4e031e3d7620439d3cdd7d6972a56086913a03f5e6c7f2a37",
+          "sha256:ec442e8ae8a14d098d9784d02c087932ae8136d25c9d2724fb25aafa71bc99db",
+          "sha256:e7f7b1a65e6123524f5d97260021a7b6111a8980592b465e1b5e6efaffd6fee0",
+          "sha256:15d72e4a0ee3524862445818d0d8d3e16018f853ec378dc13f82a949c1922798",
+          "sha256:fadd4981c5bb2895350b8c2d529450a6c3d39b1dd918ec4eacd355c38547cede",
+          "sha256:9178e01a48f26d0d0d3e2fbd2e565e7869e6209db7d842f2a6a41f3ad8407693",
+          "sha256:67c0d01d0117ba8743dfa50c9fe1b8a0da1782e134a5eb57c4b4f10b2355a2bf"
         ]
       },
       "config": {
         "Cmd": [
-          "nginx",
-          "-g",
-          "daemon off;"
+          "node",
+          "index.js"
         ],
         "Entrypoint": [
-          "/docker-entrypoint.sh"
+          "docker-entrypoint.sh"
         ],
         "Env": [
           "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-          "NGINX_VERSION=1.29.0",
-          "NJS_VERSION=0.9.0",
-          "NJS_RELEASE=1~bookworm",
-          "PKG_RELEASE=1~bookworm",
-          "DYNPKG_RELEASE=1~bookworm"
+          "NODE_VERSION=20.19.3",
+          "YARN_VERSION=1.22.22"
         ],
-        "Labels": {
-          "maintainer": "NGINX Docker Maintainers \u003cdocker-maint@nginx.com\u003e"
-        },
+        "WorkingDir": "/app",
         "ExposedPorts": {
-          "80/tcp": {}
+          "3000/tcp": {}
         },
-        "StopSignal": "SIGQUIT"
+        "ArgsEscaped": true
       }
     }
   },
   "Results": [
     {
-      "Target": "nginx:latest (debian 12.11)",
+      "Target": "dhanalakshmi89/48:00851affb56b3af6089a5db2ba89f9a6d4e6c61e (debian 12.11)",
       "Class": "os-pkgs",
       "Type": "debian",
       "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2025-6199",
+          "VendorIDs": [
+            "DSA-5946-1"
+          ],
+          "PkgID": "gir1.2-gdkpixbuf-2.0@2.42.10+dfsg-1+deb12u1",
+          "PkgName": "gir1.2-gdkpixbuf-2.0",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/gir1.2-gdkpixbuf-2.0@2.42.10%2Bdfsg-1%2Bdeb12u1?arch=amd64\u0026distro=debian-12.11",
+            "UID": "8142cb790c5796b6"
+          },
+          "InstalledVersion": "2.42.10+dfsg-1+deb12u1",
+          "FixedVersion": "2.42.10+dfsg-1+deb12u2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-6199",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "gdk-pixbuf: Uninitialized Memory Disclosure in GdkPixbuf GIF LZW Decoder",
+          "Description": "A flaw was found in the GIF parser of GdkPixbuf’s LZW decoder. When an invalid symbol is encountered during decompression, the decoder sets the reported output size to the full buffer length rather than the actual number of written bytes. This logic error results in uninitialized sections of the buffer being included in the output, potentially leaking arbitrary memory contents in the processed image.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "VendorSeverity": {
+            "redhat": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-6199",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373147",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-6199",
+            "https://www.cve.org/CVERecord?id=CVE-2025-6199"
+          ],
+          "PublishedDate": "2025-06-17T15:15:54.307Z",
+          "LastModifiedDate": "2025-06-17T20:50:23.507Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-5222",
+          "VendorIDs": [
+            "DSA-5951-1"
+          ],
+          "PkgID": "icu-devtools@72.1-3",
+          "PkgName": "icu-devtools",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/icu-devtools@72.1-3?arch=amd64\u0026distro=debian-12.11",
+            "UID": "4953d0bec58f9b17"
+          },
+          "InstalledVersion": "72.1-3",
+          "FixedVersion": "72.1-3+deb12u1",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-5222",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "icu: Stack buffer overflow in the SRBRoot::addTag function",
+          "Description": "A stack buffer overflow was found in Internationl components for unicode (ICU ). While running the genrb binary, the 'subtag' struct overflowed at the SRBRoot::addTag function. This issue may lead to memory corruption and local arbitrary code execution.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-120"
+          ],
+          "VendorSeverity": {
+            "redhat": 2,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-5222",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2368600",
+            "https://lists.debian.org/debian-lts-announce/2025/06/msg00015.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-5222",
+            "https://www.cve.org/CVERecord?id=CVE-2025-5222"
+          ],
+          "PublishedDate": "2025-05-27T21:15:23.03Z",
+          "LastModifiedDate": "2025-06-15T23:15:18.303Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-6199",
+          "VendorIDs": [
+            "DSA-5946-1"
+          ],
+          "PkgID": "libgdk-pixbuf-2.0-0@2.42.10+dfsg-1+deb12u1",
+          "PkgName": "libgdk-pixbuf-2.0-0",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libgdk-pixbuf-2.0-0@2.42.10%2Bdfsg-1%2Bdeb12u1?arch=amd64\u0026distro=debian-12.11",
+            "UID": "9509af40c0dbc1fe"
+          },
+          "InstalledVersion": "2.42.10+dfsg-1+deb12u1",
+          "FixedVersion": "2.42.10+dfsg-1+deb12u2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-6199",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "gdk-pixbuf: Uninitialized Memory Disclosure in GdkPixbuf GIF LZW Decoder",
+          "Description": "A flaw was found in the GIF parser of GdkPixbuf’s LZW decoder. When an invalid symbol is encountered during decompression, the decoder sets the reported output size to the full buffer length rather than the actual number of written bytes. This logic error results in uninitialized sections of the buffer being included in the output, potentially leaking arbitrary memory contents in the processed image.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "VendorSeverity": {
+            "redhat": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-6199",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373147",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-6199",
+            "https://www.cve.org/CVERecord?id=CVE-2025-6199"
+          ],
+          "PublishedDate": "2025-06-17T15:15:54.307Z",
+          "LastModifiedDate": "2025-06-17T20:50:23.507Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-6199",
+          "VendorIDs": [
+            "DSA-5946-1"
+          ],
+          "PkgID": "libgdk-pixbuf-2.0-dev@2.42.10+dfsg-1+deb12u1",
+          "PkgName": "libgdk-pixbuf-2.0-dev",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libgdk-pixbuf-2.0-dev@2.42.10%2Bdfsg-1%2Bdeb12u1?arch=amd64\u0026distro=debian-12.11",
+            "UID": "2851f744feca7596"
+          },
+          "InstalledVersion": "2.42.10+dfsg-1+deb12u1",
+          "FixedVersion": "2.42.10+dfsg-1+deb12u2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-6199",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "gdk-pixbuf: Uninitialized Memory Disclosure in GdkPixbuf GIF LZW Decoder",
+          "Description": "A flaw was found in the GIF parser of GdkPixbuf’s LZW decoder. When an invalid symbol is encountered during decompression, the decoder sets the reported output size to the full buffer length rather than the actual number of written bytes. This logic error results in uninitialized sections of the buffer being included in the output, potentially leaking arbitrary memory contents in the processed image.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "VendorSeverity": {
+            "redhat": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-6199",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373147",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-6199",
+            "https://www.cve.org/CVERecord?id=CVE-2025-6199"
+          ],
+          "PublishedDate": "2025-06-17T15:15:54.307Z",
+          "LastModifiedDate": "2025-06-17T20:50:23.507Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-6199",
+          "VendorIDs": [
+            "DSA-5946-1"
+          ],
+          "PkgID": "libgdk-pixbuf2.0-bin@2.42.10+dfsg-1+deb12u1",
+          "PkgName": "libgdk-pixbuf2.0-bin",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libgdk-pixbuf2.0-bin@2.42.10%2Bdfsg-1%2Bdeb12u1?arch=amd64\u0026distro=debian-12.11",
+            "UID": "49a402257d2649d3"
+          },
+          "InstalledVersion": "2.42.10+dfsg-1+deb12u1",
+          "FixedVersion": "2.42.10+dfsg-1+deb12u2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-6199",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "gdk-pixbuf: Uninitialized Memory Disclosure in GdkPixbuf GIF LZW Decoder",
+          "Description": "A flaw was found in the GIF parser of GdkPixbuf’s LZW decoder. When an invalid symbol is encountered during decompression, the decoder sets the reported output size to the full buffer length rather than the actual number of written bytes. This logic error results in uninitialized sections of the buffer being included in the output, potentially leaking arbitrary memory contents in the processed image.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "VendorSeverity": {
+            "redhat": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-6199",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373147",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-6199",
+            "https://www.cve.org/CVERecord?id=CVE-2025-6199"
+          ],
+          "PublishedDate": "2025-06-17T15:15:54.307Z",
+          "LastModifiedDate": "2025-06-17T20:50:23.507Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-6199",
+          "VendorIDs": [
+            "DSA-5946-1"
+          ],
+          "PkgID": "libgdk-pixbuf2.0-common@2.42.10+dfsg-1+deb12u1",
+          "PkgName": "libgdk-pixbuf2.0-common",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libgdk-pixbuf2.0-common@2.42.10%2Bdfsg-1%2Bdeb12u1?arch=all\u0026distro=debian-12.11",
+            "UID": "de2175f98ef55d89"
+          },
+          "InstalledVersion": "2.42.10+dfsg-1+deb12u1",
+          "FixedVersion": "2.42.10+dfsg-1+deb12u2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-6199",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "gdk-pixbuf: Uninitialized Memory Disclosure in GdkPixbuf GIF LZW Decoder",
+          "Description": "A flaw was found in the GIF parser of GdkPixbuf’s LZW decoder. When an invalid symbol is encountered during decompression, the decoder sets the reported output size to the full buffer length rather than the actual number of written bytes. This logic error results in uninitialized sections of the buffer being included in the output, potentially leaking arbitrary memory contents in the processed image.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-200"
+          ],
+          "VendorSeverity": {
+            "redhat": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+              "V3Score": 3.3
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-6199",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2373147",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-6199",
+            "https://www.cve.org/CVERecord?id=CVE-2025-6199"
+          ],
+          "PublishedDate": "2025-06-17T15:15:54.307Z",
+          "LastModifiedDate": "2025-06-17T20:50:23.507Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-5222",
+          "VendorIDs": [
+            "DSA-5951-1"
+          ],
+          "PkgID": "libicu-dev@72.1-3",
+          "PkgName": "libicu-dev",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libicu-dev@72.1-3?arch=amd64\u0026distro=debian-12.11",
+            "UID": "24aa0ea4addfc495"
+          },
+          "InstalledVersion": "72.1-3",
+          "FixedVersion": "72.1-3+deb12u1",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-5222",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "icu: Stack buffer overflow in the SRBRoot::addTag function",
+          "Description": "A stack buffer overflow was found in Internationl components for unicode (ICU ). While running the genrb binary, the 'subtag' struct overflowed at the SRBRoot::addTag function. This issue may lead to memory corruption and local arbitrary code execution.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-120"
+          ],
+          "VendorSeverity": {
+            "redhat": 2,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "V3Score": 7
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-5222",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2368600",
+            "https://lists.debian.org/debian-lts-announce/2025/06/msg00015.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-5222",
+            "https://www.cve.org/CVERecord?id=CVE-2025-5222"
+          ],
+          "PublishedDate": "2025-05-27T21:15:23.03Z",
+          "LastModifiedDate": "2025-06-15T23:15:18.303Z"
+        },
         {
           "VulnerabilityID": "CVE-2025-5222",
           "VendorIDs": [
@@ -185,8 +523,8 @@
           "FixedVersion": "72.1-3+deb12u1",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:4eb3a9835b30d43f28a1fcd1d85c9503ef59f655bbbe8b050ff0a3bd9a6d56c2",
-            "DiffID": "sha256:151f9feea56362593fb4b85e2020dc8c8b69d33703c6d5cf2c8769b190cc54b3"
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-5222",
           "DataSource": {
@@ -235,8 +573,8 @@
           "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:4eb3a9835b30d43f28a1fcd1d85c9503ef59f655bbbe8b050ff0a3bd9a6d56c2",
-            "DiffID": "sha256:151f9feea56362593fb4b85e2020dc8c8b69d33703c6d5cf2c8769b190cc54b3"
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-25062",
@@ -307,8 +645,8 @@
           "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:4eb3a9835b30d43f28a1fcd1d85c9503ef59f655bbbe8b050ff0a3bd9a6d56c2",
-            "DiffID": "sha256:151f9feea56362593fb4b85e2020dc8c8b69d33703c6d5cf2c8769b190cc54b3"
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-56171",
           "DataSource": {
@@ -377,8 +715,8 @@
           "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:4eb3a9835b30d43f28a1fcd1d85c9503ef59f655bbbe8b050ff0a3bd9a6d56c2",
-            "DiffID": "sha256:151f9feea56362593fb4b85e2020dc8c8b69d33703c6d5cf2c8769b190cc54b3"
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-24928",
           "DataSource": {
@@ -448,8 +786,8 @@
           "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:4eb3a9835b30d43f28a1fcd1d85c9503ef59f655bbbe8b050ff0a3bd9a6d56c2",
-            "DiffID": "sha256:151f9feea56362593fb4b85e2020dc8c8b69d33703c6d5cf2c8769b190cc54b3"
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-27113",
@@ -510,8 +848,8 @@
           "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:4eb3a9835b30d43f28a1fcd1d85c9503ef59f655bbbe8b050ff0a3bd9a6d56c2",
-            "DiffID": "sha256:151f9feea56362593fb4b85e2020dc8c8b69d33703c6d5cf2c8769b190cc54b3"
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-32414",
@@ -574,8 +912,8 @@
           "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:4eb3a9835b30d43f28a1fcd1d85c9503ef59f655bbbe8b050ff0a3bd9a6d56c2",
-            "DiffID": "sha256:151f9feea56362593fb4b85e2020dc8c8b69d33703c6d5cf2c8769b190cc54b3"
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-32415",
@@ -635,8 +973,8 @@
           "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:4eb3a9835b30d43f28a1fcd1d85c9503ef59f655bbbe8b050ff0a3bd9a6d56c2",
-            "DiffID": "sha256:151f9feea56362593fb4b85e2020dc8c8b69d33703c6d5cf2c8769b190cc54b3"
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-49043",
           "DataSource": {
@@ -700,8 +1038,8 @@
           "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:4eb3a9835b30d43f28a1fcd1d85c9503ef59f655bbbe8b050ff0a3bd9a6d56c2",
-            "DiffID": "sha256:151f9feea56362593fb4b85e2020dc8c8b69d33703c6d5cf2c8769b190cc54b3"
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-39615",
@@ -767,8 +1105,8 @@
           "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:4eb3a9835b30d43f28a1fcd1d85c9503ef59f655bbbe8b050ff0a3bd9a6d56c2",
-            "DiffID": "sha256:151f9feea56362593fb4b85e2020dc8c8b69d33703c6d5cf2c8769b190cc54b3"
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
           },
           "SeveritySource": "nvd",
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-45322",
@@ -827,8 +1165,8 @@
           "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
           "Status": "fixed",
           "Layer": {
-            "Digest": "sha256:4eb3a9835b30d43f28a1fcd1d85c9503ef59f655bbbe8b050ff0a3bd9a6d56c2",
-            "DiffID": "sha256:151f9feea56362593fb4b85e2020dc8c8b69d33703c6d5cf2c8769b190cc54b3"
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
           },
           "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-34459",
           "DataSource": {
@@ -871,6 +1209,790 @@
           ],
           "PublishedDate": "2024-05-14T15:39:11.917Z",
           "LastModifiedDate": "2024-11-21T09:18:43.59Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-25062",
+          "VendorIDs": [
+            "DSA-5949-1"
+          ],
+          "PkgID": "libxml2-dev@2.9.14+dfsg-1.3~deb12u1",
+          "PkgName": "libxml2-dev",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libxml2-dev@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64\u0026distro=debian-12.11",
+            "UID": "70a91dc3233b848"
+          },
+          "InstalledVersion": "2.9.14+dfsg-1.3~deb12u1",
+          "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-25062",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libxml2: use-after-free in XMLReader",
+          "Description": "An issue was discovered in libxml2 before 2.11.7 and 2.12.x before 2.12.5. When using the XML Reader interface with DTD validation and XInclude expansion enabled, processing crafted XML documents can lead to an xmlValidatePopElement use-after-free.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "azure": 3,
+            "cbl-mariner": 3,
+            "nvd": 3,
+            "oracle-oval": 2,
+            "photon": 3,
+            "redhat": 2,
+            "rocky": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2024:2679",
+            "https://access.redhat.com/security/cve/CVE-2024-25062",
+            "https://bugzilla.redhat.com/2262726",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2262726",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-25062",
+            "https://errata.almalinux.org/9/ALSA-2024-2679.html",
+            "https://errata.rockylinux.org/RLSA-2024:2679",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/604",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/tags",
+            "https://linux.oracle.com/cve/CVE-2024-25062.html",
+            "https://linux.oracle.com/errata/ELSA-2024-3626.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-25062",
+            "https://ubuntu.com/security/notices/USN-6658-1",
+            "https://ubuntu.com/security/notices/USN-6658-2",
+            "https://www.cve.org/CVERecord?id=CVE-2024-25062"
+          ],
+          "PublishedDate": "2024-02-04T16:15:45.12Z",
+          "LastModifiedDate": "2025-05-09T18:16:03.707Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-56171",
+          "VendorIDs": [
+            "DSA-5949-1"
+          ],
+          "PkgID": "libxml2-dev@2.9.14+dfsg-1.3~deb12u1",
+          "PkgName": "libxml2-dev",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libxml2-dev@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64\u0026distro=debian-12.11",
+            "UID": "70a91dc3233b848"
+          },
+          "InstalledVersion": "2.9.14+dfsg-1.3~deb12u1",
+          "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-56171",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libxml2: Use-After-Free in libxml2",
+          "Description": "libxml2 before 2.12.10 and 2.13.x before 2.13.6 has a use-after-free in xmlSchemaIDCFillNodeTables and xmlSchemaBubbleIDCNodeTables in xmlschemas.c. To exploit this, a crafted XML document must be validated against an XML schema with certain identity constraints, or a crafted XML schema must be used.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "azure": 3,
+            "cbl-mariner": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "V3Score": 8.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2025:2679",
+            "https://access.redhat.com/security/cve/CVE-2024-56171",
+            "https://bugzilla.redhat.com/2346416",
+            "https://bugzilla.redhat.com/2346421",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2346416",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2346421",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56171",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24928",
+            "https://errata.almalinux.org/9/ALSA-2025-2679.html",
+            "https://errata.rockylinux.org/RLSA-2025:2686",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/828",
+            "https://linux.oracle.com/cve/CVE-2024-56171.html",
+            "https://linux.oracle.com/errata/ELSA-2025-2686.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-56171",
+            "https://security.netapp.com/advisory/ntap-20250328-0010/",
+            "https://ubuntu.com/security/notices/USN-7302-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-56171",
+            "https://www.openwall.com/lists/oss-security/2025/02/18/2"
+          ],
+          "PublishedDate": "2025-02-18T22:15:12.797Z",
+          "LastModifiedDate": "2025-03-28T15:15:46.003Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-24928",
+          "VendorIDs": [
+            "DSA-5949-1"
+          ],
+          "PkgID": "libxml2-dev@2.9.14+dfsg-1.3~deb12u1",
+          "PkgName": "libxml2-dev",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libxml2-dev@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64\u0026distro=debian-12.11",
+            "UID": "70a91dc3233b848"
+          },
+          "InstalledVersion": "2.9.14+dfsg-1.3~deb12u1",
+          "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-24928",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libxml2: Stack-based buffer overflow in xmlSnprintfElements of libxml2",
+          "Description": "libxml2 before 2.12.10 and 2.13.x before 2.13.6 has a stack-based buffer overflow in xmlSnprintfElements in valid.c. To exploit this, DTD validation must occur for an untrusted document or untrusted DTD. NOTE: this is similar to CVE-2017-9047.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-121"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "azure": 3,
+            "cbl-mariner": 3,
+            "oracle-oval": 3,
+            "photon": 3,
+            "redhat": 3,
+            "rocky": 3,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+              "V3Score": 7.8
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2025:2679",
+            "https://access.redhat.com/security/cve/CVE-2025-24928",
+            "https://bugzilla.redhat.com/2346416",
+            "https://bugzilla.redhat.com/2346421",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2346416",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2346421",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-56171",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-24928",
+            "https://errata.almalinux.org/9/ALSA-2025-2679.html",
+            "https://errata.rockylinux.org/RLSA-2025:2686",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/847",
+            "https://issues.oss-fuzz.com/issues/392687022",
+            "https://linux.oracle.com/cve/CVE-2025-24928.html",
+            "https://linux.oracle.com/errata/ELSA-2025-2686.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-24928",
+            "https://security.netapp.com/advisory/ntap-20250321-0006/",
+            "https://ubuntu.com/security/notices/USN-7302-1",
+            "https://www.cve.org/CVERecord?id=CVE-2025-24928",
+            "https://www.openwall.com/lists/oss-security/2025/02/18/2"
+          ],
+          "PublishedDate": "2025-02-18T23:15:10.25Z",
+          "LastModifiedDate": "2025-03-21T18:15:34.86Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-27113",
+          "VendorIDs": [
+            "DSA-5949-1"
+          ],
+          "PkgID": "libxml2-dev@2.9.14+dfsg-1.3~deb12u1",
+          "PkgName": "libxml2-dev",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libxml2-dev@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64\u0026distro=debian-12.11",
+            "UID": "70a91dc3233b848"
+          },
+          "InstalledVersion": "2.9.14+dfsg-1.3~deb12u1",
+          "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-27113",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libxml2: NULL Pointer Dereference in libxml2 xmlPatMatch",
+          "Description": "libxml2 before 2.12.10 and 2.13.x before 2.13.6 has a NULL pointer dereference in xmlPatMatch in pattern.c.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-476"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "azure": 1,
+            "cbl-mariner": 1,
+            "nvd": 3,
+            "photon": 1,
+            "redhat": 1,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "V3Score": 3.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-27113",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/861",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-27113",
+            "https://security.netapp.com/advisory/ntap-20250306-0004/",
+            "https://ubuntu.com/security/notices/USN-7302-1",
+            "https://www.cve.org/CVERecord?id=CVE-2025-27113",
+            "https://www.openwall.com/lists/oss-security/2025/02/18/2"
+          ],
+          "PublishedDate": "2025-02-18T23:15:10.96Z",
+          "LastModifiedDate": "2025-03-07T01:15:12.823Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-32414",
+          "VendorIDs": [
+            "DSA-5949-1"
+          ],
+          "PkgID": "libxml2-dev@2.9.14+dfsg-1.3~deb12u1",
+          "PkgName": "libxml2-dev",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libxml2-dev@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64\u0026distro=debian-12.11",
+            "UID": "70a91dc3233b848"
+          },
+          "InstalledVersion": "2.9.14+dfsg-1.3~deb12u1",
+          "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-32414",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libxml2: Out-of-Bounds Read in libxml2",
+          "Description": "In libxml2 before 2.13.8 and 2.14.x before 2.14.2, out-of-bounds memory access can occur in the Python API (Python bindings) because of an incorrect return value. This occurs in xmlPythonFileRead and xmlPythonFileReadRaw because of a difference between bytes and characters.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-393",
+            "CWE-252"
+          ],
+          "VendorSeverity": {
+            "amazon": 2,
+            "azure": 2,
+            "nvd": 3,
+            "oracle-oval": 2,
+            "photon": 2,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:L",
+              "V3Score": 5.6
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-32414",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/889",
+            "https://linux.oracle.com/cve/CVE-2025-32414.html",
+            "https://linux.oracle.com/errata/ELSA-2025-8958.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-32414",
+            "https://ubuntu.com/security/notices/USN-7467-1",
+            "https://ubuntu.com/security/notices/USN-7467-2",
+            "https://www.cve.org/CVERecord?id=CVE-2025-32414"
+          ],
+          "PublishedDate": "2025-04-08T03:15:15.94Z",
+          "LastModifiedDate": "2025-04-23T19:09:35.517Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2025-32415",
+          "VendorIDs": [
+            "DSA-5949-1"
+          ],
+          "PkgID": "libxml2-dev@2.9.14+dfsg-1.3~deb12u1",
+          "PkgName": "libxml2-dev",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libxml2-dev@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64\u0026distro=debian-12.11",
+            "UID": "70a91dc3233b848"
+          },
+          "InstalledVersion": "2.9.14+dfsg-1.3~deb12u1",
+          "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-32415",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libxml2: Out-of-bounds Read in xmlSchemaIDCFillNodeTables",
+          "Description": "In libxml2 before 2.13.8 and 2.14.x before 2.14.2, xmlSchemaIDCFillNodeTables in xmlschemas.c has a heap-based buffer under-read. To exploit this, a crafted XML document must be validated against an XML schema with certain identity constraints, or a crafted XML schema must be used.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-1284",
+            "CWE-125"
+          ],
+          "VendorSeverity": {
+            "amazon": 2,
+            "azure": 1,
+            "nvd": 3,
+            "photon": 1,
+            "redhat": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-32415",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/890",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-32415",
+            "https://ubuntu.com/security/notices/USN-7467-1",
+            "https://ubuntu.com/security/notices/USN-7467-2",
+            "https://www.cve.org/CVERecord?id=CVE-2025-32415"
+          ],
+          "PublishedDate": "2025-04-17T17:15:33.733Z",
+          "LastModifiedDate": "2025-04-23T18:17:52.053Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2022-49043",
+          "VendorIDs": [
+            "DSA-5949-1"
+          ],
+          "PkgID": "libxml2-dev@2.9.14+dfsg-1.3~deb12u1",
+          "PkgName": "libxml2-dev",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libxml2-dev@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64\u0026distro=debian-12.11",
+            "UID": "70a91dc3233b848"
+          },
+          "InstalledVersion": "2.9.14+dfsg-1.3~deb12u1",
+          "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2022-49043",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libxml: use-after-free in xmlXIncludeAddNode",
+          "Description": "xmlXIncludeAddNode in xinclude.c in libxml2 before 2.11.0 has a use-after-free.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "VendorSeverity": {
+            "alma": 3,
+            "amazon": 3,
+            "cbl-mariner": 4,
+            "oracle-oval": 2,
+            "redhat": 2,
+            "rocky": 2,
+            "ubuntu": 2
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:C/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2025:1350",
+            "https://access.redhat.com/security/cve/CVE-2022-49043",
+            "https://bugzilla.redhat.com/2342118",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2342118",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-49043",
+            "https://errata.almalinux.org/9/ALSA-2025-1350.html",
+            "https://errata.rockylinux.org/RLSA-2025:1517",
+            "https://github.com/php/php-src/issues/17467",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/commit/5a19e21605398cef6a8b1452477a8705cb41562b",
+            "https://linux.oracle.com/cve/CVE-2022-49043.html",
+            "https://linux.oracle.com/errata/ELSA-2025-1517.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2022-49043",
+            "https://ubuntu.com/security/notices/USN-7240-1",
+            "https://ubuntu.com/security/notices/USN-7302-1",
+            "https://www.cve.org/CVERecord?id=CVE-2022-49043"
+          ],
+          "PublishedDate": "2025-01-26T06:15:21Z",
+          "LastModifiedDate": "2025-01-26T06:15:21Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-39615",
+          "VendorIDs": [
+            "DSA-5949-1"
+          ],
+          "PkgID": "libxml2-dev@2.9.14+dfsg-1.3~deb12u1",
+          "PkgName": "libxml2-dev",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libxml2-dev@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64\u0026distro=debian-12.11",
+            "UID": "70a91dc3233b848"
+          },
+          "InstalledVersion": "2.9.14+dfsg-1.3~deb12u1",
+          "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-39615",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libxml2: crafted xml can cause global buffer overflow",
+          "Description": "Xmlsoft Libxml2 v2.11.0 was discovered to contain an out-of-bounds read via the xmlSAX2StartElement() function at /libxml2/SAX2.c. This vulnerability allows attackers to cause a Denial of Service (DoS) via supplying a crafted XML file. NOTE: the vendor's position is that the product does not support the legacy SAX1 interface with custom callbacks; there is a crash even without crafted input.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-119"
+          ],
+          "VendorSeverity": {
+            "alma": 2,
+            "amazon": 2,
+            "nvd": 2,
+            "oracle-oval": 2,
+            "photon": 2,
+            "redhat": 2,
+            "rocky": 2
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/errata/RHSA-2023:7747",
+            "https://access.redhat.com/security/cve/CVE-2023-39615",
+            "https://bugzilla.redhat.com/2235864",
+            "https://bugzilla.redhat.com/show_bug.cgi?id=2235864",
+            "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-39615",
+            "https://errata.almalinux.org/9/ALSA-2023-7747.html",
+            "https://errata.rockylinux.org/RLSA-2024:0119",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/535",
+            "https://linux.oracle.com/cve/CVE-2023-39615.html",
+            "https://linux.oracle.com/errata/ELSA-2024-0119.html",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-39615",
+            "https://www.cve.org/CVERecord?id=CVE-2023-39615"
+          ],
+          "PublishedDate": "2023-08-29T17:15:12.527Z",
+          "LastModifiedDate": "2024-11-21T08:15:42.583Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2023-45322",
+          "VendorIDs": [
+            "DSA-5949-1"
+          ],
+          "PkgID": "libxml2-dev@2.9.14+dfsg-1.3~deb12u1",
+          "PkgName": "libxml2-dev",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libxml2-dev@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64\u0026distro=debian-12.11",
+            "UID": "70a91dc3233b848"
+          },
+          "InstalledVersion": "2.9.14+dfsg-1.3~deb12u1",
+          "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "SeveritySource": "nvd",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-45322",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libxml2: use-after-free in xmlUnlinkNode() in tree.c",
+          "Description": "libxml2 through 2.11.5 has a use-after-free that can only occur after a certain memory allocation fails. This occurs in xmlUnlinkNode in tree.c. NOTE: the vendor's position is \"I don't think these issues are critical enough to warrant a CVE ID ... because an attacker typically can't control when memory allocations fail.\"",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-416"
+          ],
+          "VendorSeverity": {
+            "amazon": 3,
+            "azure": 2,
+            "cbl-mariner": 2,
+            "nvd": 2,
+            "photon": 2,
+            "redhat": 1
+          },
+          "CVSS": {
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 6.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 5.9
+            }
+          },
+          "References": [
+            "http://www.openwall.com/lists/oss-security/2023/10/06/5",
+            "https://access.redhat.com/security/cve/CVE-2023-45322",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/344",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/583",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-45322",
+            "https://www.cve.org/CVERecord?id=CVE-2023-45322"
+          ],
+          "PublishedDate": "2023-10-06T22:15:11.66Z",
+          "LastModifiedDate": "2024-11-21T08:26:44.78Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-34459",
+          "VendorIDs": [
+            "DSA-5949-1"
+          ],
+          "PkgID": "libxml2-dev@2.9.14+dfsg-1.3~deb12u1",
+          "PkgName": "libxml2-dev",
+          "PkgIdentifier": {
+            "PURL": "pkg:deb/debian/libxml2-dev@2.9.14%2Bdfsg-1.3~deb12u1?arch=amd64\u0026distro=debian-12.11",
+            "UID": "70a91dc3233b848"
+          },
+          "InstalledVersion": "2.9.14+dfsg-1.3~deb12u1",
+          "FixedVersion": "2.9.14+dfsg-1.3~deb12u2",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:48b8862a18fa961ebfbac8484877dd4894e96ee88177d8c4f1f54d9727262b7d",
+            "DiffID": "sha256:f9093a7aaa16f2994fe3a1436946cd10568f698a5b13f53713ee9454754bbe2a"
+          },
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-34459",
+          "DataSource": {
+            "ID": "debian",
+            "Name": "Debian Security Tracker",
+            "URL": "https://salsa.debian.org/security-tracker-team/security-tracker"
+          },
+          "Title": "libxml2: buffer over-read in xmlHTMLPrintFileContext in xmllint.c",
+          "Description": "An issue was discovered in xmllint (from libxml2) before 2.11.8 and 2.12.x before 2.12.7. Formatting error messages with xmllint --htmlout can result in a buffer over-read in xmlHTMLPrintFileContext in xmllint.c.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-122"
+          ],
+          "VendorSeverity": {
+            "amazon": 2,
+            "azure": 2,
+            "cbl-mariner": 3,
+            "photon": 3,
+            "redhat": 1,
+            "ubuntu": 1
+          },
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 5.5
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-34459",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/issues/720",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/releases/v2.11.8",
+            "https://gitlab.gnome.org/GNOME/libxml2/-/releases/v2.12.7",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/5HVUXKYTBWT3G5DEEQX62STJQBY367NL/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/INKSSLW5VMZIXHRPZBAW4TJUX5SQKARG/",
+            "https://lists.fedoraproject.org/archives/list/package-announce%40lists.fedoraproject.org/message/VRDJCNQP32LV56KESUQ5SNZKAJWSZZRI/",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-34459",
+            "https://ubuntu.com/security/notices/USN-7240-1",
+            "https://ubuntu.com/security/notices/USN-7302-1",
+            "https://www.cve.org/CVERecord?id=CVE-2024-34459"
+          ],
+          "PublishedDate": "2024-05-14T15:39:11.917Z",
+          "LastModifiedDate": "2024-11-21T09:18:43.59Z"
+        }
+      ]
+    },
+    {
+      "Target": "Node.js",
+      "Class": "lang-pkgs",
+      "Type": "node-pkg",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2025-5889",
+          "PkgID": "brace-expansion@2.0.1",
+          "PkgName": "brace-expansion",
+          "PkgPath": "usr/local/lib/node_modules/npm/node_modules/brace-expansion/package.json",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/brace-expansion@2.0.1",
+            "UID": "5312e61c89337017"
+          },
+          "InstalledVersion": "2.0.1",
+          "FixedVersion": "2.0.2, 1.1.12, 3.0.1, 4.0.1",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:443415701344bc97cda40cfa058a79cfac48ca67a8fb0066eaff125cabe8fbfb",
+            "DiffID": "sha256:ec442e8ae8a14d098d9784d02c087932ae8136d25c9d2724fb25aafa71bc99db"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2025-5889",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "brace-expansion: juliangruber brace-expansion index.js expand redos",
+          "Description": "A vulnerability was found in juliangruber brace-expansion up to 1.1.11/2.0.1/3.0.0/4.0.0. It has been rated as problematic. Affected by this issue is the function expand of the file index.js. The manipulation leads to inefficient regular expression complexity. The attack may be launched remotely. The complexity of an attack is rather high. The exploitation is known to be difficult. The exploit has been disclosed to the public and may be used. Upgrading to version 1.1.12, 2.0.2, 3.0.1 and 4.0.1 is able to address this issue. The name of the patch is a5b98a4f30d7813266b221435e1eaaf25a1b0ac5. It is recommended to upgrade the affected component.",
+          "Severity": "LOW",
+          "CweIDs": [
+            "CWE-400",
+            "CWE-1333"
+          ],
+          "VendorSeverity": {
+            "ghsa": 1,
+            "redhat": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "V3Score": 3.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2025-5889",
+            "https://gist.github.com/mmmsssttt404/37a40ce7d6e5ca604858fe30814d9466",
+            "https://github.com/juliangruber/brace-expansion",
+            "https://github.com/juliangruber/brace-expansion/commit/0b6a9781e18e9d2769bb2931f4856d1360243ed2",
+            "https://github.com/juliangruber/brace-expansion/commit/15f9b3c75ebf5988198241fecaebdc45eff28a9f",
+            "https://github.com/juliangruber/brace-expansion/commit/36603d5f3599a37af9e85eda30acd7d28599c36e",
+            "https://github.com/juliangruber/brace-expansion/commit/c3c73c8b088defc70851843be88ccc3af08e7217",
+            "https://github.com/juliangruber/brace-expansion/pull/65/commits/a5b98a4f30d7813266b221435e1eaaf25a1b0ac5",
+            "https://github.com/juliangruber/brace-expansion/releases/tag/v4.0.1",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-5889",
+            "https://vuldb.com/?ctiid.311660",
+            "https://vuldb.com/?id.311660",
+            "https://vuldb.com/?submit.585717",
+            "https://www.cve.org/CVERecord?id=CVE-2025-5889"
+          ],
+          "PublishedDate": "2025-06-09T19:15:25.46Z",
+          "LastModifiedDate": "2025-06-12T16:06:47.857Z"
+        },
+        {
+          "VulnerabilityID": "CVE-2024-21538",
+          "PkgID": "cross-spawn@7.0.3",
+          "PkgName": "cross-spawn",
+          "PkgPath": "usr/local/lib/node_modules/npm/node_modules/cross-spawn/package.json",
+          "PkgIdentifier": {
+            "PURL": "pkg:npm/cross-spawn@7.0.3",
+            "UID": "480da04347e2e299"
+          },
+          "InstalledVersion": "7.0.3",
+          "FixedVersion": "7.0.5, 6.0.6",
+          "Status": "fixed",
+          "Layer": {
+            "Digest": "sha256:443415701344bc97cda40cfa058a79cfac48ca67a8fb0066eaff125cabe8fbfb",
+            "DiffID": "sha256:ec442e8ae8a14d098d9784d02c087932ae8136d25c9d2724fb25aafa71bc99db"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2024-21538",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory npm",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Anpm"
+          },
+          "Title": "cross-spawn: regular expression denial of service",
+          "Description": "Versions of the package cross-spawn before 6.0.6, from 7.0.0 and before 7.0.5 are vulnerable to Regular Expression Denial of Service (ReDoS) due to improper input sanitization. An attacker can increase the CPU usage and crash the program by crafting a very large and well crafted string.",
+          "Severity": "HIGH",
+          "CweIDs": [
+            "CWE-1333"
+          ],
+          "VendorSeverity": {
+            "amazon": 2,
+            "azure": 3,
+            "cbl-mariner": 3,
+            "ghsa": 3,
+            "redhat": 1
+          },
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:N/I:N/A:H",
+              "V3Score": 4.4
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2024-21538",
+            "https://github.com/moxystudio/node-cross-spawn",
+            "https://github.com/moxystudio/node-cross-spawn/commit/5ff3a07d9add449021d806e45c4168203aa833ff",
+            "https://github.com/moxystudio/node-cross-spawn/commit/640d391fde65388548601d95abedccc12943374f",
+            "https://github.com/moxystudio/node-cross-spawn/commit/d35c865b877d2f9ded7c1ed87521c2fdb689c8dd",
+            "https://github.com/moxystudio/node-cross-spawn/issues/165",
+            "https://github.com/moxystudio/node-cross-spawn/pull/160",
+            "https://nvd.nist.gov/vuln/detail/CVE-2024-21538",
+            "https://security.snyk.io/vuln/SNYK-JAVA-ORGWEBJARSNPM-8366349",
+            "https://security.snyk.io/vuln/SNYK-JS-CROSSSPAWN-8303230",
+            "https://www.cve.org/CVERecord?id=CVE-2024-21538"
+          ],
+          "PublishedDate": "2024-11-08T05:15:06.453Z",
+          "LastModifiedDate": "2025-05-20T15:16:03.53Z"
         }
       ]
     }
