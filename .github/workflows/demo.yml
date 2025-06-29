@@ -28,7 +28,7 @@ jobs:
           run: |
             docker build -t dhanalakshmi89/superdeepu:v1 .
             echo  ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
-            docker push dhanalakshmi89/${{github.repository}}:${{github.sha}}
+            docker push dhanalakshmi89/${{github.run_id}}:${{github.sha}}
 
     
     scan-with-trivy:
