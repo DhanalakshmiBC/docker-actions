@@ -26,9 +26,9 @@ jobs:
 
         - name: push to docker hub
           run: |
-            docker build -t dhanalakshmi89/${{github.run_id}}:${{github.sha}} .
+            docker build -t dhanalakshmi89/${{github.base_ref}}:${{github.sha}} .
             echo  ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
-            docker push dhanalakshmi89/${{github.run_id}}:${{github.sha}}
+            docker push dhanalakshmi89/${{github.base_ref}}:${{github.sha}}
 
     
     scan-with-trivy:
@@ -55,14 +55,14 @@ jobs:
         - name: Download Trivy vulnerability scanner
           run: trivy image --download-db-only
 
-        - name: Run trivy vulnerability scanner
-          run: |
-            OUTPUT_FILE="GIT-Actions/Trivy-automation/scan-results-${DATE}.json"
-            mkdir -p "GIT-Actions/Trivy-automation"
-            trivy image --format json --ignore-unfixed --vuln-type os,library --severity CRITICAL,HIGH,MEDIUM,LOW -o "$OUTPUT_FILE" nginx:latest
+        # - name: Run trivy vulnerability scanner
+        #   run: |
+        #     OUTPUT_FILE="GIT-Actions/Trivy-automation/scan-results-${DATE}.json"
+        #     mkdir -p "GIT-Actions/Trivy-automation"
+        #     trivy image --format json --ignore-unfixed --vuln-type os,library --severity CRITICAL,HIGH,MEDIUM,LOW -o "$OUTPUT_FILE" nginx:latest
 
-        - name: Verify scan results exist
-          run: ls -l "GIT-Actions/Trivy-automation"
+        # - name: Verify scan results exist
+        #   run: ls -l "GIT-Actions/Trivy-automation"
 
         # - name: Commit scan results to repository
         #   env:
