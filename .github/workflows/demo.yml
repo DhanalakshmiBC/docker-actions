@@ -80,12 +80,7 @@ jobs:
         steps:
         - uses: actions/checkout@v3
         - name: SonarQube Scan
-          uses: sonarsource/sonarqube-scan-action@v1
-          with:
-            projectBaseDir: .
-            args: >
-              -Dsonar.organization=my-org
-              -Dsonar.projectKey=my-node-spp
+          uses: SonarSource/sonarqube-scan-action@v5
           env:
             SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
             SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
