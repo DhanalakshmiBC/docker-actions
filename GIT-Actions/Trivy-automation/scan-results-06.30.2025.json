@@ -1,14 +1,14 @@
 {
   "SchemaVersion": 2,
-  "CreatedAt": "2025-06-30T15:20:12.56609287Z",
-  "ArtifactName": "dhanalakshmi89/57:89084e96a2b8c43cd2b803a89376d0b3e148390e",
+  "CreatedAt": "2025-06-30T15:33:02.842521165Z",
+  "ArtifactName": "dhanalakshmi89/60:4f2b1e2334e06bb72e09004fbd626d48ca717db9",
   "ArtifactType": "container_image",
   "Metadata": {
     "OS": {
       "Family": "debian",
       "Name": "12.11"
     },
-    "ImageID": "sha256:72d98affb12d532fd358f2f373472b60b9639f24d74fa04d464a3ce70cd59ff0",
+    "ImageID": "sha256:725ff6430c26ac20ecd23e380497c711930790c881ff031dd25be02c8ba9e252",
     "DiffIDs": [
       "sha256:8f003894a7efc4178494f1e133497ed2f325ae53b6a65869e54c04d1c51d588f",
       "sha256:f5b8fb1def00d5f185660b75bac1eed1fce467d44cebd868dae2f344711321ef",
@@ -18,19 +18,19 @@
       "sha256:ec442e8ae8a14d098d9784d02c087932ae8136d25c9d2724fb25aafa71bc99db",
       "sha256:e7f7b1a65e6123524f5d97260021a7b6111a8980592b465e1b5e6efaffd6fee0",
       "sha256:15d72e4a0ee3524862445818d0d8d3e16018f853ec378dc13f82a949c1922798",
-      "sha256:24de9b4c510f130f041998fe8821761f12a539e8ca66a9baa46084c3d8db6917",
-      "sha256:32253ada7b073a497bdd356280d954a70accd539859877212e74baf34214e19f",
-      "sha256:fb92ed0f8e3b43959a64f7129dd332c975e12051aaaa586c196359f785717df1"
+      "sha256:ba78bd1d70c9dc18025ef4b3b0727a7b0d29cb91029d3dc3d792abed30fb0c7a",
+      "sha256:ad245006f89a5363b20aa5495bcaddae960a145decabce89d70b95747dd7d0f5",
+      "sha256:fc5c000fe9366e6da7c8723931c9807749fbc0d2856ee83dbe8e264033cc97d0"
     ],
     "RepoTags": [
-      "dhanalakshmi89/57:89084e96a2b8c43cd2b803a89376d0b3e148390e"
+      "dhanalakshmi89/60:4f2b1e2334e06bb72e09004fbd626d48ca717db9"
     ],
     "RepoDigests": [
-      "dhanalakshmi89/57@sha256:6e5aa43eb0abb4a73de1e9b5277beb756fbb5241030ee23c68e03c8699d79c26"
+      "dhanalakshmi89/60@sha256:5cf08190a1f83e7e410c5cd4b5de436a3d37508383c04177efb25e5a8478e257"
     ],
     "ImageConfig": {
       "architecture": "amd64",
-      "created": "2025-06-30T15:19:38.401857659Z",
+      "created": "2025-06-30T15:32:24.567284628Z",
       "history": [
         {
           "created": "2023-05-10T23:29:59Z",
@@ -97,28 +97,28 @@
           "empty_layer": true
         },
         {
-          "created": "2025-06-30T15:19:37.223740419Z",
+          "created": "2025-06-30T15:32:23.371113573Z",
           "created_by": "WORKDIR /app",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-06-30T15:19:37.241822316Z",
+          "created": "2025-06-30T15:32:23.391201809Z",
           "created_by": "COPY . /app # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-06-30T15:19:38.401857659Z",
+          "created": "2025-06-30T15:32:24.567284628Z",
           "created_by": "RUN /bin/sh -c npm install # buildkit",
           "comment": "buildkit.dockerfile.v0"
         },
         {
-          "created": "2025-06-30T15:19:38.401857659Z",
+          "created": "2025-06-30T15:32:24.567284628Z",
           "created_by": "EXPOSE map[3000/tcp:{}]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
         },
         {
-          "created": "2025-06-30T15:19:38.401857659Z",
+          "created": "2025-06-30T15:32:24.567284628Z",
           "created_by": "CMD [\"node\" \"index.js\"]",
           "comment": "buildkit.dockerfile.v0",
           "empty_layer": true
@@ -136,9 +136,9 @@
           "sha256:ec442e8ae8a14d098d9784d02c087932ae8136d25c9d2724fb25aafa71bc99db",
           "sha256:e7f7b1a65e6123524f5d97260021a7b6111a8980592b465e1b5e6efaffd6fee0",
           "sha256:15d72e4a0ee3524862445818d0d8d3e16018f853ec378dc13f82a949c1922798",
-          "sha256:24de9b4c510f130f041998fe8821761f12a539e8ca66a9baa46084c3d8db6917",
-          "sha256:32253ada7b073a497bdd356280d954a70accd539859877212e74baf34214e19f",
-          "sha256:fb92ed0f8e3b43959a64f7129dd332c975e12051aaaa586c196359f785717df1"
+          "sha256:ba78bd1d70c9dc18025ef4b3b0727a7b0d29cb91029d3dc3d792abed30fb0c7a",
+          "sha256:ad245006f89a5363b20aa5495bcaddae960a145decabce89d70b95747dd7d0f5",
+          "sha256:fc5c000fe9366e6da7c8723931c9807749fbc0d2856ee83dbe8e264033cc97d0"
         ]
       },
       "config": {
@@ -164,7 +164,7 @@
   },
   "Results": [
     {
-      "Target": "dhanalakshmi89/57:89084e96a2b8c43cd2b803a89376d0b3e148390e (debian 12.11)",
+      "Target": "dhanalakshmi89/60:4f2b1e2334e06bb72e09004fbd626d48ca717db9 (debian 12.11)",
       "Class": "os-pkgs",
       "Type": "debian",
       "Vulnerabilities": [
