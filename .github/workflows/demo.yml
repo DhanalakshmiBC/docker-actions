@@ -46,7 +46,7 @@ jobs:
     
     scan-with-trivy:
         runs-on: ubuntu-latest
-        needs: deploy
+        needs: deploy-to-dockerhub
         steps:  
         - uses: actions/checkout@v3
 
